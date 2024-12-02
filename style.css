@@ -218,7 +218,6 @@ span{
 .text-animation span::before{
     content: "Web Developer";
     color: var(--main-color);
-    animation: words 20s infinite;
 
 }
 .text-animation span::after{
@@ -229,37 +228,8 @@ span{
     height: 100%;
     border-left: 3px solid var(--bg-color);
     right: -8px;
-    animation: crusor 0.6s infinite, typing 20s steps(14) infinite;
+    animation: typing 20s steps(14) infinite;
 
-
-}
-@keyframes cursor{
-    to{
-        border-left: 2px solid var(--main-color);/* Adds a blinking cursor effect */
-    }
-}
-/* Keyframe for word animation (placeholder for further customization) */
-@keyframes words{
-    0%,
-    20%{
-        /* No transformation for first 20% */  
-    }
-    21%,
-    40%{
-       /* Placeholder for next stage of animation */
-    }
-    41%,
-    60%{
-      /* Placeholder for middle stage of animation */
-    }
-    61%,
-    80%{
-        /* Placeholder for next stage of animation */
-    }
-    81%,
-    100%{
-        /* Placeholder for the final stage of animation */
-    }
 
 }
 @keyframes typing{
